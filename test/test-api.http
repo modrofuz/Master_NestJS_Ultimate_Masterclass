@@ -1,0 +1,7 @@
+
+### GET formatted message
+GET {{baseUri}}
+Content-Type: {{contentType}}
+Accept: application/json
+
+
