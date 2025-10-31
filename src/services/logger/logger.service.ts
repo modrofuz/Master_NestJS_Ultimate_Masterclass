@@ -1,14 +1,15 @@
 import { Injectable } from '@nestjs/common';
 import { MessageFormatterService } from '../message-formatter/message-formatter.service';
 
-
 @Injectable()
 export class LoggerService {
-  constructor(private readonly messageFormatterService: MessageFormatterService) {}
+  constructor(
+    private readonly messageFormatterService: MessageFormatterService,
+  ) {}
 
   log(message: string): string {
     const formattedMessage = this.messageFormatterService.format(message);
     console.log(formattedMessage); // logs to the server console
-    return formattedMessage;       // returns to API response
+    return formattedMessage; // returns to API response
   }
 }

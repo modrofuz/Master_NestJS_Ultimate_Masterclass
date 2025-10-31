@@ -9,4 +9,4 @@ import { LoggerService } from './services/logger/logger.service';
   controllers: [AppController],
   providers: [AppService, MessageFormatterService, LoggerService],
 })
-export class AppModule { }
+export class AppModule {}
